@@ -1,0 +1,1 @@
+# tech2u-privacy-policies
