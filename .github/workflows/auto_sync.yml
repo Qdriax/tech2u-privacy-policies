@@ -1,0 +1,43 @@
+name: Auto Update Senti Rates
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 06:00 UTC = 09:00 EAT, daily
+  workflow_dispatch: {}    # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: senti-rates-sync
+  cancel-in-progress: false
+
+jobs:
+  update-rates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pdfplumber
+
+      - name: Run rate sync
+        run: python senti/update_rates.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Senti Rate Bot"
+          git config user.email "bot@tech2u.com"
+          git add senti/rates.json
+          if git diff --cached --quiet; then
+            echo "No rate changes today."
+          else
+            git commit -m "auto: sync Senti MMF & T-Bill rates"
+            git push
+          fi
