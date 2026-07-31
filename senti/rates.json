@@ -4,8 +4,8 @@
       "id": "cytonn-mmf",
       "name": "Cytonn Money Market Fund",
       "provider": "Cytonn Asset Managers",
-      "dailyRate": 10.73,
-      "effectiveYield": 11.32,
+      "dailyRate": 10.6,
+      "effectiveYield": 11.18,
       "minimumInvestment": 100.0,
       "managementFee": 1.5,
       "fundSize": "KES 25 Billion",
@@ -18,8 +18,8 @@
       "id": "etica-mmf",
       "name": "Etica Money Market Fund",
       "provider": "Etica Capital",
-      "dailyRate": 10.19,
-      "effectiveYield": 10.73,
+      "dailyRate": 10.18,
+      "effectiveYield": 10.71,
       "minimumInvestment": 100.0,
       "managementFee": 1.5,
       "fundSize": "KES 8 Billion",
@@ -47,7 +47,7 @@
       "name": "Sanlam Money Market Fund",
       "provider": "Sanlam Investments East Africa",
       "dailyRate": 9.3,
-      "effectiveYield": 9.74,
+      "effectiveYield": 9.75,
       "minimumInvestment": 2500.0,
       "managementFee": 1.2,
       "fundSize": "KES 45 Billion",
@@ -116,8 +116,8 @@
       "id": "old-mutual-mmf",
       "name": "Old Mutual Money Market Fund",
       "provider": "Old Mutual Investment Group",
-      "dailyRate": 9.71,
-      "effectiveYield": 10.2,
+      "dailyRate": 9.75,
+      "effectiveYield": 10.24,
       "minimumInvestment": 5000.0,
       "managementFee": 2.0,
       "fundSize": "KES 52 Billion",
@@ -131,7 +131,7 @@
     {
       "id": "91-day",
       "name": "91-Day Treasury Bill",
-      "rate": 8.78,
+      "rate": 8.79,
       "termDays": 91
     },
     {
@@ -143,7 +143,7 @@
     {
       "id": "364-day",
       "name": "364-Day Treasury Bill",
-      "rate": 9.04,
+      "rate": 9.02,
       "termDays": 364
     }
   ]
