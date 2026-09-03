@@ -24,6 +24,7 @@
     p { color: #C2D1C9; font-size: 0.96rem; margin-bottom: 14px; }
     ul, ol { padding-left: 22px; margin-bottom: 14px; }
     li { color: #C2D1C9; font-size: 0.95rem; margin: 6px 0; }
+    a { color: #57C7B0; }
     .highlight-box { background: #132228; border-left: 4px solid #57C7B0; border-radius: 0 10px 10px 0; padding: 16px 20px; margin: 20px 0; }
     .highlight-box p { margin: 0; color: #D4F0E8; font-size: 0.94rem; }
     .contact-box { background: linear-gradient(135deg, #16252C, #0E1317); border: 1px solid #2B424C; border-radius: 12px; padding: 26px; text-align: center; margin-top: 30px; }
@@ -44,10 +45,10 @@
     <h2>Table of Contents</h2>
     <ol>
       <li><a href="#s1">Introduction & Core Philosophy</a></li>
-      <li><a href="#s2">Information We Do Not Collect</a></li>
-      <li><a href="#s3">Local Data Storage & Tracebook</a></li>
-      <li><a href="#s4">Device Permissions</a></li>
-      <li><a href="#s5">Advertising & Third-Party SDKs</a></li>
+      <li><a href="#s2">Information Handled Locally</a></li>
+      <li><a href="#s3">Advertising & Third-Party SDKs (Google AdMob)</a></li>
+      <li><a href="#s4">Consent Management & Revocation (Google UMP)</a></li>
+      <li><a href="#s5">Device Permissions</a></li>
       <li><a href="#s6">Children’s Privacy (COPPA / GDPR-K)</a></li>
       <li><a href="#s7">Regulatory Compliance (GDPR, CCPA/CPRA, Swiss DPA)</a></li>
       <li><a href="#s8">Data Retention & Deletion</a></li>
@@ -57,81 +58,96 @@
 
   <section id="s1">
     <h2><span class="section-num">1</span> Introduction & Core Philosophy</h2>
-    <p>BounceTrace: Ricochet Puzzle ("the App") is developed and maintained by Tech2U Savannah ("we", "us", or "our"). The App is an offline, non-violent, solver-certified bank-shot puzzle game where player solutions are captured as collectible vector line art.</p>
+    <p>BounceTrace: Ricochet Puzzle ("the App") is developed and published by Tech2U Savannah ("we", "us", or "our"). The App is a solver-certified bank-shot puzzle game where player ricochet solutions resolve into collectible vector line art.</p>
     <div class="highlight-box">
-      <p><strong>Privacy by Architecture:</strong> BounceTrace was engineered with a strict offline-first doctrine. No accounts, no internet connectivity, no analytics beacons, and no background profiling. Nothing leaves your device.</p>
+      <p><strong>Privacy by Architecture:</strong> We do not require account registration, login credentials, or access to sensitive personal data. Your game progression, puzzle scores, and Tracebook vectors stay strictly on your local handset. Advertising services are provided via privacy-compliant, certified Google SDKs.</p>
     </div>
   </section>
 
   <section id="s2">
-    <h2><span class="section-num">2</span> Information We Do Not Collect</h2>
-    <p>We do not collect, transmit, store on remote servers, sell, or share any personal information from users of BounceTrace. Specifically, the App does NOT access or gather:</p>
+    <h2><span class="section-num">2</span> Information Handled Locally</h2>
+    <p>All core gameplay data is created and stored strictly within the private application sandbox on your device (using encrypted Android Room / SQLite storage and SharedPreferences):</p>
     <ul>
-      <li>Personally Identifiable Information (PII) such as your name, email address, phone number, or physical address.</li>
-      <li>Precise or approximate device geolocation data.</li>
-      <li>Device identifiers (IMEI, Android ID, MAC address) or network parameters.</li>
-      <li>Biometric data, contacts, calendar entries, SMS messages, or call logs.</li>
-      <li>Behavioral telemetry or telemetry tracking across other applications.</li>
+      <li><strong>Tracebook Records:</strong> When you clear a puzzle board, the polyline vector route and milestone metrics (board ID, par, arrows used, timestamp) are stored locally in your private Tracebook so you can inspect and replay your solutions.</li>
+      <li><strong>Settings & Preferences:</strong> Your selected visual and haptic preferences (Aim Assist, Left-Handed alignment, High Contrast, Reduced Motion, Sound) are stored locally.</li>
     </ul>
+    <p>This information is never transmitted to our servers and cannot be accessed by other applications.</p>
   </section>
 
   <section id="s3">
-    <h2><span class="section-num">3</span> Local Data Storage & Tracebook</h2>
-    <p>All gameplay data generated during your play sessions is stored strictly on your local device using Android's encrypted private application sandbox (Room / SQLite database and SharedPreferences):</p>
+    <h2><span class="section-num">3</span> Advertising & Third-Party SDKs (Google AdMob)</h2>
+    <p>BounceTrace is supported by advertising to keep the puzzle experience free for all players. We display advertisements using <strong>Google AdMob</strong> (provided by Google LLC / Alphabet Inc.):</p>
     <ul>
-      <li><strong>Tracebook Records:</strong> When you clear a puzzle board, the polyline vector route and milestone metrics (board ID, par, arrows used, timestamp) are stored locally in your private Tracebook so you can inspect and replay your solutions.</li>
-      <li><strong>Settings & Preferences:</strong> Your selected visual and haptic preferences (Aim Assist, Left-Handed alignment, High Contrast, Reduced Motion, Sound, and Haptic feedback) are stored locally.</li>
+      <li><strong>Banner Advertisements:</strong> Adaptive banner ads displayed in secondary screens (Tracebook, Settings) safely separated from the active playfield.</li>
+      <li><strong>Interstitial Advertisements:</strong> Full-screen advertisements displayed periodically when advancing puzzle boards (governed by a strict cooldown guard to prevent user interruption).</li>
     </ul>
-    <p>This data is sandboxed and cannot be accessed by other applications. If you clear the App's storage or uninstall the App, all locally stored game data is permanently removed.</p>
+    <p>To serve ads and ensure network security, Google AdMob may automatically collect and process certain device information:</p>
+    <ul>
+      <li><strong>Device Identifiers:</strong> Google Advertising ID (GAID) or ID for Advertising, which can be reset or deleted in your Android device settings.</li>
+      <li><strong>Technical Data:</strong> IP address (used for coarse geographic ad localization and fraud prevention), device model, operating system version, carrier, and screen dimensions.</li>
+      <li><strong>Ad Interaction Data:</strong> Ad impressions, clicks, and diagnostic performance metrics to prevent invalid traffic.</li>
+    </ul>
+    <p>For detailed information on how Google processes ad data, please review:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google Uses Information from Sites or Apps That Use Their Services</a></li>
+    </ul>
   </section>
 
   <section id="s4">
-    <h2><span class="section-num">4</span> Device Permissions</h2>
-    <p>BounceTrace adheres strictly to the principle of data minimization and least privilege. The App declares <strong>zero</strong> sensitive or dangerous device permissions in its manifest:</p>
+    <h2><span class="section-num">4</span> Consent Management & Revocation (Google UMP)</h2>
+    <p>To guarantee compliance with European Union GDPR, UK GDPR, and Swiss data protection regulations, BounceTrace integrates the official <strong>Google User Messaging Platform (UMP) SDK</strong>:</p>
     <ul>
-      <li><strong>No Internet Permission:</strong> The App does not declare <code>android.permission.INTERNET</code>. It cannot establish outgoing or incoming network connections.</li>
-      <li><strong>No Storage Permission:</strong> The App does not declare shared external storage read/write permissions.</li>
-      <li><strong>No Location, Camera, or Audio Permissions:</strong> The App has no access to cameras, microphones, or sensor locations.</li>
+      <li><strong>Consent Gathering:</strong> Users located in the European Economic Area (EEA), the United Kingdom, and Switzerland are presented with a standardized consent form upon initial launch to choose whether to allow personalized ads, non-personalized ads, or vendor partners.</li>
+      <li><strong>On-Demand Consent Revocation:</strong> You have the right to modify or withdraw your consent at any time. Inside the App, navigate to <strong>Settings &rarr; "Ad Privacy &amp; Consent Choices"</strong> to reopen the Google Privacy Options form and update your preferences immediately.</li>
+      <li><strong>Device-Level Opt-Out:</strong> On Android devices, you can opt out of interest-based ads or reset your Advertising ID at any time by going to <code>Settings &gt; Google &gt; Ads &gt; Reset advertising ID</code> or <code>Delete advertising ID</code>.</li>
     </ul>
   </section>
 
   <section id="s5">
-    <h2><span class="section-num">5</span> Advertising & Third-Party SDKs</h2>
-    <p>BounceTrace contains <strong>no advertisements</strong> and incorporates no advertising or tracking software development kits (SDKs). There are no banner ads, interstitial pop-ups, rewarded video ads, or programmatic trackers.</p>
+    <h2><span class="section-num">5</span> Device Permissions</h2>
+    <p>BounceTrace requests only the minimum technical permissions necessary to operate ad services:</p>
+    <ul>
+      <li><code>android.permission.INTERNET</code>: Required by Google AdMob to fetch banner and interstitial ad creatives and consent dialogs.</li>
+      <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Used by the AdMob SDK to determine whether an active network connection is present.</li>
+    </ul>
+    <p>The App does NOT request location permissions, camera access, microphone access, contacts, storage permissions, or phone state access.</p>
   </section>
 
   <section id="s6">
     <h2><span class="section-num">6</span> Children’s Privacy (COPPA & GDPR-K)</h2>
-    <p>Because BounceTrace collects no personal data whatsoever and does not require internet communication, it complies with the Children’s Online Privacy Protection Act (COPPA) in the United States and the EU/UK General Data Protection Regulation child-privacy standards (GDPR-K). The App is safe for audiences of all ages, including children under 13.</p>
+    <p>BounceTrace is a geometric puzzle game designed for general audiences. We comply with the Children’s Online Privacy Protection Act (COPPA) in the United States and GDPR-K in the European Union. We do not knowingly collect personal data from children under 13 (or under 16 in applicable EU jurisdictions). The ad SDK is initialized with underage tags in accordance with applicable Google Play Families policies.</p>
   </section>
 
   <section id="s7">
     <h2><span class="section-num">7</span> Regulatory Compliance (GDPR, CCPA/CPRA, Swiss DPA)</h2>
-    <p>We honor global privacy rights including the European Union General Data Protection Regulation (EU GDPR), the UK Data Protection Act, the Swiss Federal Act on Data Protection (FADP), and the California Consumer Privacy Act as amended by the California Privacy Rights Act (CCPA/CPRA):</p>
+    <p>We respect your privacy rights under global privacy laws:</p>
     <ul>
-      <li><strong>Right to Know & Access:</strong> Since we collect no personal data, there is no remote data profile to retrieve.</li>
-      <li><strong>Right to Deletion:</strong> All data resides on your physical phone; uninstalling the App or clearing App data via Android Settings instantly deletes all local records.</li>
-      <li><strong>Do Not Sell or Share My Data:</strong> We do not sell, rent, or share personal data under any circumstances.</li>
+      <li><strong>Right to Know &amp; Access:</strong> All gameplay progress and traces are visible directly within the App's Tracebook. Ad data collected by Google is managed via Google Account settings.</li>
+      <li><strong>Right to Deletion:</strong> You can wipe all local progress and traces by uninstalling the App or tapping "Clear Data" in Android system settings.</li>
+      <li><strong>CCPA/CPRA (California Residents):</strong> You have the right to opt out of the sale or sharing of your personal information for cross-context behavioral advertising via device advertising settings or the in-app consent preferences form.</li>
+      <li><strong>Do Not Track / Global Privacy Control:</strong> We support platform-level opt-out signals honored by Google Mobile Ads.</li>
     </ul>
   </section>
 
   <section id="s8">
     <h2><span class="section-num">8</span> Data Retention & Deletion</h2>
-    <p>We do not operate servers that host player accounts or telemetry databases. Your puzzle progress and trace artifacts remain on your handset for as long as you keep the application installed. You retain total ownership and control over your data at all times.</p>
+    <p>We do not operate remote databases storing player profiles or account records. Your puzzle completion records and vector art remain on your handset until you choose to delete them or uninstall the App. Ad diagnostic data collected by Google is retained according to Google's standard data retention policies.</p>
   </section>
 
   <section id="s9">
     <h2><span class="section-num">9</span> Developer Contact Information</h2>
-    <p>If you have any questions, inquiries, or feedback regarding this Privacy Policy or BounceTrace, please contact our team at:</p>
+    <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or our data practices, please contact us:</p>
     <div class="contact-box">
-      <p><strong>Tech2U Savannah — Developer Operations</strong></p>
+      <p><strong>Tech2U Savannah</strong></p>
+      <p>Developer Support &amp; Privacy Desk</p>
       <p><a href="mailto:developer.tech2u@gmail.com">developer.tech2u@gmail.com</a></p>
-      <p style="margin-top: 8px; font-size: 0.88rem; color: #8C9EA6;">Nairobi, Kenya</p>
+      <p style="margin-top: 10px; font-size: 0.88rem; color: #8C9EA6;">Website: <a href="https://qdriax.github.io/tech2u-privacy-policies/" style="color: #57C7B0;">https://qdriax.github.io/tech2u-privacy-policies/</a></p>
     </div>
   </section>
 </main>
 <footer>
-  &copy; 2026 Tech2U Savannah. All rights reserved.
+  <p>&copy; 2026 Tech2U Savannah. All rights reserved.</p>
 </footer>
 </body>
 </html>
