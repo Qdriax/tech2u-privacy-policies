@@ -1,4 +1,4 @@
-name: Auto Update Senti Rates
+name: Auto Update App Rates (Senti & BuildTally)
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: senti-rates-sync
+  group: rates-sync
   cancel-in-progress: false
 
 jobs:
@@ -27,17 +27,20 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4 pdfplumber
 
-      - name: Run rate sync
+      - name: Run Senti rate sync
         run: python senti/update_rates.py
+
+      - name: Run BuildTally rate sync & validation
+        run: python buildtally/update_rates.py --bump-auto
 
       - name: Commit and push if changed
         run: |
-          git config user.name "Senti Rate Bot"
+          git config user.name "Tech2U Rate Bot"
           git config user.email "bot@tech2u.com"
-          git add senti/rates.json
+          git add senti/rates.json buildtally/rates.json
           if git diff --cached --quiet; then
             echo "No rate changes today."
           else
-            git commit -m "auto: sync Senti MMF & T-Bill rates"
+            git commit -m "auto: sync Senti & BuildTally rates"
             git push
           fi
