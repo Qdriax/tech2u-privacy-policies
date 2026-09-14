@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "ratePackVersion": "KE-2026-PLACEHOLDER-R0",
+  "country": "KE",
+  "currency": "KES",
+  "note": "PLACEHOLDER RATE PACK. Every rate below is an illustrative estimate for development/demo purposes only. Per the LoanTruth product brief (Sections 9.4, 24, 27), no named preset may ship to production until it is re-verified against the lender's current official published terms and the provenance fields below are updated accordingly.",
+  "products": [
+    {
+      "id": "hustler_fund",
+      "displayName": "Hustler Fund",
+      "category": "Government scheme",
+      "subtitle": "Government scheme",
+      "termUnit": "DAY",
+      "repaymentType": "SINGLE_BULLET",
+      "limits": { "minAmount": 500, "maxAmount": 50000, "minDays": 1, "maxDays": 365 },
+      "components": [
+        {
+          "id": "interest",
+          "label": "Interest (8.0% p.a.)",
+          "model": "DAILY_RATE",
+          "rate": 0.000219,
+          "timing": "DUE_WITH_FINAL_PAYMENT",
+          "base": "FACE_AMOUNT"
+        }
+      ],
+      "provenance": {
+        "sourceType": "SECONDARY_TEMPORARY",
+        "sourceName": "Illustrative placeholder -- NOT verified against primary source",
+        "verifiedOn": "2026-09-13"
+      },
+      "notes": ["Interest calculated on the amount borrowed."],
+      "isPlaceholder": true
+    },
+    {
+      "id": "sacco_reducing",
+      "displayName": "SACCO (Reducing)",
+      "category": "SACCOs",
+      "subtitle": "Typical member rate",
+      "termUnit": "MONTH",
+      "repaymentType": "DECLINING_PRINCIPAL",
+      "installmentCount": 1,
+      "limits": { "minAmount": 5000, "maxAmount": 2000000, "minDays": 30, "maxDays": 1095 },
+      "components": [
+        {
+          "id": "interest",
+          "label": "Interest (1.0% per month, reducing)",
+          "model": "REDUCING_BALANCE",
+          "rate": 0.01,
+          "timing": "EACH_INSTALLMENT",
+          "base": "OUTSTANDING_BALANCE"
+        }
+      ],
+      "provenance": {
+        "sourceType": "SECONDARY_TEMPORARY",
+        "sourceName": "Illustrative placeholder -- NOT verified against primary source",
+        "verifiedOn": "2026-09-13"
+      },
+      "notes": [
+        "Generic SACCO model: interest accrues on the outstanding balance as it declines after each payment.",
+        "Real SACCO terms vary by institution; use the local override to match your actual offer."
+      ],
+      "isPlaceholder": true
+    },
+    {
+      "id": "sacco_flat",
+      "displayName": "SACCO (Flat rate)",
+      "category": "SACCOs",
+      "subtitle": "Flat-rate member loan",
+      "termUnit": "MONTH",
+      "repaymentType": "EQUAL_INSTALLMENT",
+      "installmentCount": 1,
+      "limits": { "minAmount": 5000, "maxAmount": 2000000, "minDays": 30, "maxDays": 1095 },
+      "components": [
+        {
+          "id": "interest",
+          "label": "Interest (1.0% per month, flat)",
+          "model": "MONTHLY_FLAT",
+          "rate": 0.01,
+          "timing": "EACH_INSTALLMENT",
+          "base": "FACE_AMOUNT"
+        }
+      ],
+      "provenance": {
+        "sourceType": "SECONDARY_TEMPORARY",
+        "sourceName": "Illustrative placeholder -- NOT verified against primary source",
+        "verifiedOn": "2026-09-13"
+      },
+      "notes": [
+        "Generic SACCO model: interest is calculated on the original principal for the whole term, not the declining balance.",
+        "The same headline percentage as a reducing-balance SACCO can cost more over multiple installments -- see the Learn tab."
+      ],
+      "isPlaceholder": true
+    },
+    {
+      "id": "kcb_mpesa",
+      "displayName": "KCB M-Pesa",
+      "category": "Mobile money",
+      "subtitle": "M-Pesa loan",
+      "termUnit": "DAY",
+      "repaymentType": "SINGLE_BULLET",
+      "limits": { "minAmount": 100, "maxAmount": 250000, "minDays": 1, "maxDays": 90 },
+      "components": [
+        {
+          "id": "facility_fee",
+          "label": "Facility fee",
+          "model": "FLAT_PERCENT",
+          "rate": 0.0249,
+          "timing": "DUE_WITH_FINAL_PAYMENT",
+          "base": "FACE_AMOUNT",
+          "minCharge": 50
+        }
+      ],
+      "provenance": {
+        "sourceType": "SECONDARY_TEMPORARY",
+        "sourceName": "Illustrative placeholder -- NOT verified against primary source",
+        "verifiedOn": "2026-09-13"
+      },
+      "notes": ["Facility fee applied to the amount borrowed."],
+      "isPlaceholder": true
+    },
+    {
+      "id": "mshwari",
+      "displayName": "M-Shwari",
+      "category": "Mobile money",
+      "subtitle": "Safaricom",
+      "termUnit": "DAY",
+      "repaymentType": "SINGLE_BULLET",
+      "limits": { "minAmount": 100, "maxAmount": 100000, "minDays": 1, "maxDays": 90 },
+      "components": [
+        {
+          "id": "facility_fee",
+          "label": "Facility fee",
+          "model": "FLAT_PERCENT",
+          "rate": 0.0375,
+          "timing": "DUE_WITH_FINAL_PAYMENT",
+          "base": "FACE_AMOUNT"
+        }
+      ],
+      "provenance": {
+        "sourceType": "SECONDARY_TEMPORARY",
+        "sourceName": "Illustrative placeholder -- NOT verified against primary source",
+        "verifiedOn": "2026-09-13"
+      },
+      "notes": ["Facility fee applied to the amount borrowed."],
+      "isPlaceholder": true
+    },
+    {
+      "id": "fuliza",
+      "displayName": "Fuliza",
+      "category": "Mobile money",
+      "subtitle": "M-Pesa overdraft",
+      "termUnit": "DAY",
+      "repaymentType": "SINGLE_BULLET",
+      "limits": { "minAmount": 50, "maxAmount": 70000, "minDays": 1, "maxDays": 30 },
+      "components": [
+        {
+          "id": "access_fee",
+          "label": "Access fee (deducted upfront)",
+          "model": "FLAT_PERCENT",
+          "rate": 0.05,
+          "timing": "UPFRONT_DEDUCTED",
+          "base": "FACE_AMOUNT"
+        }
+      ],
+      "provenance": {
+        "sourceType": "SECONDARY_TEMPORARY",
+        "sourceName": "Illustrative placeholder -- NOT verified against primary source",
+        "verifiedOn": "2026-09-13"
+      },
+      "notes": ["Fee deducted upfront; you receive less than the amount you request."],
+      "isPlaceholder": true
+    },
+    {
+      "id": "tala",
+      "displayName": "Tala",
+      "category": "Digital lenders",
+      "subtitle": "Digital lender",
+      "termUnit": "DAY",
+      "repaymentType": "SINGLE_BULLET",
+      "limits": { "minAmount": 500, "maxAmount": 50000, "minDays": 7, "maxDays": 60 },
+      "components": [
+        {
+          "id": "service_fee",
+          "label": "Service fee",
+          "model": "FLAT_PERCENT",
+          "rate": 0.0639,
+          "timing": "DUE_WITH_FINAL_PAYMENT",
+          "base": "FACE_AMOUNT",
+          "taxRate": 0.20
+        }
+      ],
+      "provenance": {
+        "sourceType": "SECONDARY_TEMPORARY",
+        "sourceName": "Illustrative placeholder -- NOT verified against primary source",
+        "verifiedOn": "2026-09-13"
+      },
+      "notes": ["Service fee shown includes a 20% excise duty component, as Kenyan digital lenders typically apply."],
+      "isPlaceholder": true
+    },
+    {
+      "id": "branch",
+      "displayName": "Branch",
+      "category": "Digital lenders",
+      "subtitle": "Digital lender",
+      "termUnit": "DAY",
+      "repaymentType": "SINGLE_BULLET",
+      "limits": { "minAmount": 250, "maxAmount": 70000, "minDays": 7, "maxDays": 68 },
+      "components": [
+        {
+          "id": "service_fee",
+          "label": "Service fee",
+          "model": "FLAT_PERCENT",
+          "rate": 0.0702,
+          "timing": "DUE_WITH_FINAL_PAYMENT",
+          "base": "FACE_AMOUNT"
+        }
+      ],
+      "provenance": {
+        "sourceType": "SECONDARY_TEMPORARY",
+        "sourceName": "Illustrative placeholder -- NOT verified against primary source",
+        "verifiedOn": "2026-09-13"
+      },
+      "notes": ["Service fee applied to the amount borrowed."],
+      "isPlaceholder": true
+    },
+    {
+      "id": "timiza",
+      "displayName": "Timiza",
+      "category": "Mobile money",
+      "subtitle": "Absa mobile loan",
+      "termUnit": "DAY",
+      "repaymentType": "SINGLE_BULLET",
+      "limits": { "minAmount": 500, "maxAmount": 150000, "minDays": 1, "maxDays": 30 },
+      "components": [
+        {
+          "id": "facility_fee",
+          "label": "Facility fee",
+          "model": "FLAT_PERCENT",
+          "rate": 0.031,
+          "timing": "DUE_WITH_FINAL_PAYMENT",
+          "base": "FACE_AMOUNT"
+        }
+      ],
+      "provenance": {
+        "sourceType": "SECONDARY_TEMPORARY",
+        "sourceName": "Illustrative placeholder -- NOT verified against primary source",
+        "verifiedOn": "2026-09-13"
+      },
+      "notes": ["Facility fee applied to the amount borrowed."],
+      "isPlaceholder": true
+    }
+  ]
+}
