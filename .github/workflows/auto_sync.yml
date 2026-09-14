@@ -33,14 +33,17 @@ jobs:
       - name: Run BuildTally rate sync & validation
         run: python buildtally/update_rates.py --bump-auto
 
+      - name: Run LoanTruth rate sync & verification
+        run: python loantruth/update_rates.py --auto
+
       - name: Commit and push if changed
         run: |
           git config user.name "Tech2U Rate Bot"
           git config user.email "bot@tech2u.com"
-          git add senti/rates.json buildtally/rates.json
+          git add senti/rates.json buildtally/rates.json loantruth/rate_pack.json
           if git diff --cached --quiet; then
             echo "No rate changes today."
           else
-            git commit -m "auto: sync Senti & BuildTally rates"
+            git commit -m "auto: sync Senti, BuildTally & LoanTruth rates"
             git push
           fi
