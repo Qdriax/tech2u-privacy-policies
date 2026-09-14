@@ -163,7 +163,9 @@ def sync_rate_pack(auto_bump: bool = False, check_online: bool = False) -> bool:
             provenance = p.get("provenance", {})
 
             # Update provenance to official sources
-            if provenance.get("sourceName") != src["sourceName"] or provenance.get("sourceUrl") != src["sourceUrl"]:
+            if (provenance.get("sourceName") != src["sourceName"] or
+                provenance.get("sourceUrl") != src["sourceUrl"] or
+                provenance.get("sourceType") != src["sourceType"]):
                 provenance["sourceType"] = src["sourceType"]
                 provenance["sourceName"] = src["sourceName"]
                 provenance["sourceUrl"] = src["sourceUrl"]

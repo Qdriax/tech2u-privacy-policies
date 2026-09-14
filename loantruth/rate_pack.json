@@ -29,7 +29,7 @@
         }
       ],
       "provenance": {
-        "sourceType": "OFFICIAL_GOVERNMENT_SCHEME",
+        "sourceType": "REGULATOR",
         "sourceName": "Government Financial Inclusion Fund (Official Portal)",
         "verifiedOn": "2026-09-14",
         "sourceUrl": "https://www.financialinclusion.go.ke"
@@ -64,7 +64,7 @@
         }
       ],
       "provenance": {
-        "sourceType": "REGULATORY_SUPERVISORY_BENCHMARK",
+        "sourceType": "REGULATOR",
         "sourceName": "SASRA (Sacco Societies Regulatory Authority) Industry Benchmark",
         "verifiedOn": "2026-09-14",
         "sourceUrl": "https://www.sasra.go.ke"
@@ -100,7 +100,7 @@
         }
       ],
       "provenance": {
-        "sourceType": "REGULATORY_SUPERVISORY_BENCHMARK",
+        "sourceType": "REGULATOR",
         "sourceName": "SASRA (Sacco Societies Regulatory Authority) Industry Benchmark",
         "verifiedOn": "2026-09-14",
         "sourceUrl": "https://www.sasra.go.ke"
@@ -136,7 +136,7 @@
         }
       ],
       "provenance": {
-        "sourceType": "PRIMARY_LENDER_TARIFF",
+        "sourceType": "OFFICIAL_PROVIDER",
         "sourceName": "KCB Bank Kenya & Safaricom Official Tariff Schedule",
         "verifiedOn": "2026-09-14",
         "sourceUrl": "https://www.safaricom.co.ke/personal/m-pesa/credit-financial-services/kcb-m-pesa"
@@ -170,7 +170,7 @@
         }
       ],
       "provenance": {
-        "sourceType": "PRIMARY_LENDER_TARIFF",
+        "sourceType": "OFFICIAL_PROVIDER",
         "sourceName": "NCBA Bank Kenya & Safaricom M-Pesa Official Tariff",
         "verifiedOn": "2026-09-14",
         "sourceUrl": "https://www.safaricom.co.ke/personal/m-pesa/credit-financial-services/m-shwari"
@@ -204,7 +204,7 @@
         }
       ],
       "provenance": {
-        "sourceType": "PRIMARY_LENDER_TARIFF",
+        "sourceType": "OFFICIAL_PROVIDER",
         "sourceName": "Safaricom M-Pesa / NCBA / KCB Fuliza Continuous Credit Tariff",
         "verifiedOn": "2026-09-14",
         "sourceUrl": "https://www.safaricom.co.ke/personal/m-pesa/credit-financial-services/fuliza"
@@ -239,7 +239,7 @@
         }
       ],
       "provenance": {
-        "sourceType": "CBK_REGULATED_DCP_TARIFF",
+        "sourceType": "REGULATOR",
         "sourceName": "Tala Kenya (Inventure Mobile Ltd - Licensed DCP)",
         "verifiedOn": "2026-09-14",
         "sourceUrl": "https://tala.co.ke"
@@ -273,7 +273,7 @@
         }
       ],
       "provenance": {
-        "sourceType": "CBK_REGULATED_DCP_TARIFF",
+        "sourceType": "REGULATOR",
         "sourceName": "Branch International Financial Services (Licensed DCP)",
         "verifiedOn": "2026-09-14",
         "sourceUrl": "https://branch.co.ke"
@@ -307,7 +307,7 @@
         }
       ],
       "provenance": {
-        "sourceType": "PRIMARY_LENDER_TARIFF",
+        "sourceType": "OFFICIAL_PROVIDER",
         "sourceName": "Absa Bank Kenya PLC Official Timiza Tariff Guide",
         "verifiedOn": "2026-09-14",
         "sourceUrl": "https://www.absabank.co.ke/personal/borrowing/timiza/"
