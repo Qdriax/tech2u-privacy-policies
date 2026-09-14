@@ -38,7 +38,7 @@ HEADERS = {
 # Official Primary & Regulatory Sources for Kenyan Lending Products
 OFFICIAL_SOURCES = {
     "hustler_fund": {
-        "sourceType": "OFFICIAL_GOVERNMENT_SCHEME",
+        "sourceType": "REGULATOR",
         "sourceName": "Government Financial Inclusion Fund (Official Portal)",
         "sourceUrl": "https://www.financialinclusion.go.ke",
         "regulatoryBody": "The National Treasury & Economic Planning",
@@ -46,7 +46,7 @@ OFFICIAL_SOURCES = {
         "notes": "Official gazetted rate of 8.0% per annum, pro-rated daily (0.0219% / day)."
     },
     "mshwari": {
-        "sourceType": "PRIMARY_LENDER_TARIFF",
+        "sourceType": "OFFICIAL_PROVIDER",
         "sourceName": "NCBA Bank Kenya & Safaricom M-Pesa Official Tariff",
         "sourceUrl": "https://www.safaricom.co.ke/personal/m-pesa/credit-financial-services/m-shwari",
         "regulatoryBody": "Central Bank of Kenya (CBK)",
@@ -54,7 +54,7 @@ OFFICIAL_SOURCES = {
         "notes": "7.5% loan facility fee for 30-day loan period (+ statutory 20% excise duty on fees)."
     },
     "kcb_mpesa": {
-        "sourceType": "PRIMARY_LENDER_TARIFF",
+        "sourceType": "OFFICIAL_PROVIDER",
         "sourceName": "KCB Bank Kenya & Safaricom Official Tariff Schedule",
         "sourceUrl": "https://www.safaricom.co.ke/personal/m-pesa/credit-financial-services/kcb-m-pesa",
         "regulatoryBody": "Central Bank of Kenya (CBK)",
@@ -62,7 +62,7 @@ OFFICIAL_SOURCES = {
         "notes": "KCB M-Pesa facility fee of 2.49% for 30-day loan, minimum charge KES 50."
     },
     "fuliza": {
-        "sourceType": "PRIMARY_LENDER_TARIFF",
+        "sourceType": "OFFICIAL_PROVIDER",
         "sourceName": "Safaricom M-Pesa / NCBA / KCB Fuliza Continuous Credit Tariff",
         "sourceUrl": "https://www.safaricom.co.ke/personal/m-pesa/credit-financial-services/fuliza",
         "regulatoryBody": "Central Bank of Kenya (CBK)",
@@ -70,7 +70,7 @@ OFFICIAL_SOURCES = {
         "notes": "Overdraft facility access fee with staggered daily maintenance charges."
     },
     "tala": {
-        "sourceType": "CBK_REGULATED_DCP_TARIFF",
+        "sourceType": "REGULATOR",
         "sourceName": "Tala Kenya (Inventure Mobile Ltd - Licensed DCP)",
         "sourceUrl": "https://tala.co.ke",
         "regulatoryBody": "Central Bank of Kenya (Digital Credit Providers Regulations 2022)",
@@ -78,7 +78,7 @@ OFFICIAL_SOURCES = {
         "notes": "Official CBK licensed Digital Credit Provider tariff plus 20% statutory excise duty."
     },
     "branch": {
-        "sourceType": "CBK_REGULATED_DCP_TARIFF",
+        "sourceType": "REGULATOR",
         "sourceName": "Branch International Financial Services (Licensed DCP)",
         "sourceUrl": "https://branch.co.ke",
         "regulatoryBody": "Central Bank of Kenya (Digital Credit Providers Regulations 2022)",
@@ -86,7 +86,7 @@ OFFICIAL_SOURCES = {
         "notes": "Official CBK licensed Digital Credit Provider monthly term fee."
     },
     "timiza": {
-        "sourceType": "PRIMARY_LENDER_TARIFF",
+        "sourceType": "OFFICIAL_PROVIDER",
         "sourceName": "Absa Bank Kenya PLC Official Timiza Tariff Guide",
         "sourceUrl": "https://www.absabank.co.ke/personal/borrowing/timiza/",
         "regulatoryBody": "Central Bank of Kenya (CBK)",
@@ -94,7 +94,7 @@ OFFICIAL_SOURCES = {
         "notes": "Absa Bank Kenya Timiza 30-day facility fee."
     },
     "sacco_reducing": {
-        "sourceType": "REGULATORY_SUPERVISORY_BENCHMARK",
+        "sourceType": "REGULATOR",
         "sourceName": "SASRA (Sacco Societies Regulatory Authority) Industry Benchmark",
         "sourceUrl": "https://www.sasra.go.ke",
         "regulatoryBody": "Sacco Societies Regulatory Authority (SASRA)",
@@ -102,7 +102,7 @@ OFFICIAL_SOURCES = {
         "notes": "Kenya SACCO average benchmark rate of 12.0% p.a. (1.0% per month reducing balance)."
     },
     "sacco_flat": {
-        "sourceType": "REGULATORY_SUPERVISORY_BENCHMARK",
+        "sourceType": "REGULATOR",
         "sourceName": "SASRA (Sacco Societies Regulatory Authority) Industry Benchmark",
         "sourceUrl": "https://www.sasra.go.ke",
         "regulatoryBody": "Sacco Societies Regulatory Authority (SASRA)",
