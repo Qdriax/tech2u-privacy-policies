@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Brix Blast</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #12122B; color: #E5EDE8; line-height: 1.7; min-height: 100vh; }
+    header { background: linear-gradient(135deg, #1B1B3A 0%, #12122B 100%); border-bottom: 1px solid #2E2E5C; padding: 44px 24px 36px; text-align: center; }
+    header h1 { font-size: clamp(1.5rem, 4vw, 2.1rem); font-weight: 700; color: #F5FAF7; margin-bottom: 8px; }
+    header .subtitle { font-size: 0.95rem; color: #9EA0D0; }
+    header .effective-date { display: inline-block; margin-top: 14px; background: #1B1B3A; border: 1px solid #3E3E7A; border-radius: 20px; padding: 5px 16px; font-size: 0.82rem; color: #69F0AE; font-weight: 600; }
+    main { max-width: 800px; margin: 0 auto; padding: 48px 24px 80px; }
+    .toc { background: #181836; border: 1px solid #2E2E5C; border-radius: 12px; padding: 22px 26px; margin-bottom: 48px; }
+    .toc h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: #9EA0D0; margin-bottom: 14px; }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin: 8px 0; }
+    .toc a { color: #40C4FF; text-decoration: none; font-size: 0.92rem; }
+    .toc a:hover { text-decoration: underline; }
+    section { margin-bottom: 44px; scroll-margin-top: 24px; }
+    section h2 { font-size: 1.2rem; font-weight: 600; color: #F5FAF7; padding-bottom: 10px; border-bottom: 1px solid #2E2E5C; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+    section h2 .section-num { background: #FFD740; color: #12122B; font-size: 0.75rem; font-weight: 800; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    p { color: #C8CCE0; font-size: 0.96rem; margin-bottom: 14px; }
+    ul, ol { padding-left: 22px; margin-bottom: 14px; }
+    li { color: #C8CCE0; font-size: 0.95rem; margin: 6px 0; }
+    a { color: #40C4FF; }
+    .highlight-box { background: #1C1C42; border-left: 4px solid #69F0AE; border-radius: 0 10px 10px 0; padding: 16px 20px; margin: 20px 0; }
+    .highlight-box p { margin: 0; color: #E0FFE8; font-size: 0.94rem; }
+    .contact-box { background: linear-gradient(135deg, #1E1E45, #12122B); border: 1px solid #3E3E7A; border-radius: 12px; padding: 26px; text-align: center; margin-top: 30px; }
+    .contact-box p { margin-bottom: 10px; }
+    .contact-box a { color: #FFD740; font-weight: 700; text-decoration: none; font-size: 1.05rem; }
+    footer { text-align: center; padding: 28px; border-top: 1px solid #2E2E5C; font-size: 0.85rem; color: #7A7C99; }
+    @media (max-width: 480px) { header { padding: 32px 16px 26px; } main { padding: 32px 16px 60px; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Brix Blast: Block Puzzle</h1>
+  <p class="subtitle">Privacy Policy & Transparency Notice</p>
+  <span class="effective-date">Effective Date: September 19, 2026</span>
+</header>
+<main>
+  <div class="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#s1">Introduction & Core Philosophy</a></li>
+      <li><a href="#s2">Information Handled Locally</a></li>
+      <li><a href="#s3">Advertising & Third-Party SDKs (Google AdMob)</a></li>
+      <li><a href="#s4">Consent Management & Revocation (Google UMP)</a></li>
+      <li><a href="#s5">Device Permissions</a></li>
+      <li><a href="#s6">Children’s Privacy (COPPA / GDPR-K)</a></li>
+      <li><a href="#s7">Regulatory Compliance (GDPR, CCPA/CPRA, Swiss DPA)</a></li>
+      <li><a href="#s8">Data Retention & Deletion</a></li>
+      <li><a href="#s9">Developer Contact Information</a></li>
+    </ol>
+  </div>
+
+  <section id="s1">
+    <h2><span class="section-num">1</span> Introduction & Core Philosophy</h2>
+    <p>Welcome to <strong>Brix Blast</strong> ("the App"), developed by <strong>Tech2U Savannah</strong> ("we," "our," or "us"). We believe in user privacy, zero account friction, and radical transparency. Brix Blast is designed as a pure offline-capable block puzzle game with runtime Canvas visuals and zero tracking of personal identity.</p>
+    <div class="highlight-box">
+      <p><strong>Core Guarantee:</strong> We do NOT collect, store, sell, or transmit your name, email address, phone number, location coordinates, or contacts. You do not need to create an account or sign in to play.</p>
+    </div>
+  </section>
+
+  <section id="s2">
+    <h2><span class="section-num">2</span> Information Handled Locally</h2>
+    <p>Brix Blast operates with local device storage only. The following data is saved exclusively on your device using Android SharedPreferences:</p>
+    <ul>
+      <li><strong>Best Score:</strong> Your high score achieved during puzzle runs.</li>
+      <li><strong>Games Played:</strong> Counter used to balance interstitial ad frequency (every second game over).</li>
+      <li><strong>Audio & Vibration Preferences:</strong> Local settings for haptic feedback and sound.</li>
+    </ul>
+    <p>This data never leaves your device and is erased automatically if you clear app storage or uninstall the App.</p>
+  </section>
+
+  <section id="s3">
+    <h2><span class="section-num">3</span> Advertising & Third-Party SDKs (Google AdMob)</h2>
+    <p>To support ongoing maintenance and keep Brix Blast 100% free to play, we display non-intrusive advertisements provided by <strong>Google AdMob</strong>.</p>
+    <ul>
+      <li><strong>Interstitial Ads:</strong> Displayed periodically between game-over states.</li>
+      <li><strong>Rewarded Ads:</strong> Optional video ads triggered exclusively upon user request ("WATCH AD + CONTINUE") to revive the puzzle board.</li>
+    </ul>
+    <p>AdMob may collect pseudonymous identifiers such as the Google Advertising ID (GAID), IP address (for coarse geographic localization), and app interaction diagnostics to serve relevant ads and prevent fraud. For details, refer to the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Privacy & Terms</a>.</p>
+  </section>
+
+  <section id="s4">
+    <h2><span class="section-num">4</span> Consent Management & Revocation (Google UMP)</h2>
+    <p>We strictly comply with global privacy standards, including the European Union General Data Protection Regulation (GDPR), UK GDPR, and California Consumer Privacy Act (CCPA/CPRA). We integrate the official <strong>Google User Messaging Platform (UMP) SDK</strong> to query and manage user consent prior to loading any advertisements.</p>
+    <div class="highlight-box">
+      <p><strong>On-Demand Consent Revocation:</strong> You can modify or withdraw your advertising consent choices at any time by tapping the <strong>CONSENT</strong> button on the App's home screen. This instantly displays the Google privacy options form.</p>
+    </div>
+  </section>
+
+  <section id="s5">
+    <h2><span class="section-num">5</span> Device Permissions</h2>
+    <p>Brix Blast requests only minimal network permissions necessary for ad rendering and consent updates:</p>
+    <ul>
+      <li><code>android.permission.INTERNET</code>: Enables retrieving ads and querying consent status.</li>
+      <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Detects connectivity to avoid unnecessary network retries.</li>
+    </ul>
+    <p>No sensitive permissions (Camera, Microphone, Precise Location, Contacts, Storage) are requested or utilized.</p>
+  </section>
+
+  <section id="s6">
+    <h2><span class="section-num">6</span> Children’s Privacy (COPPA / GDPR-K)</h2>
+    <p>Brix Blast is intended for a general audience. We do not knowingly collect personal information from children under 13 (or under 16 in certain European jurisdictions). Ad requests adhere to Google's Families Policy and applicable child protection laws.</p>
+  </section>
+
+  <section id="s7">
+    <h2><span class="section-num">7</span> Regulatory Compliance (GDPR, CCPA/CPRA, Swiss DPA)</h2>
+    <p>If you reside in the EEA, UK, Switzerland, or California, you possess specific legal rights regarding your personal data, including the right to access, rectify, or opt out of personalized advertising. Because we store no personally identifiable records on any server, you can exercise your rights by adjusting your device ad preferences or using the in-app <strong>CONSENT</strong> button.</p>
+  </section>
+
+  <section id="s8">
+    <h2><span class="section-num">8</span> Data Retention & Deletion</h2>
+    <p>All gameplay metrics (best score, runs) reside entirely on your device. To delete all associated data, open your Android device settings, navigate to <strong>Apps &rarr; Brix Blast &rarr; Storage & Cache</strong>, and select <strong>Clear Storage</strong>.</p>
+  </section>
+
+  <section id="s9">
+    <h2><span class="section-num">9</span> Developer Contact Information</h2>
+    <div class="contact-box">
+      <p>If you have any questions or feedback regarding this Privacy Policy, please contact our privacy team:</p>
+      <p><strong>Tech2U Savannah</strong></p>
+      <a href="mailto:developer.tech2u@gmail.com">developer.tech2u@gmail.com</a>
+      <p style="margin-top: 12px; font-size: 0.85rem; color: #9EA0D0;">Developer Page: <a href="https://play.google.com/store/apps/dev?id=5576543719747757488" target="_blank" rel="noopener">Google Play Store</a></p>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2026 Tech2U Savannah. All rights reserved.</p>
+</footer>
+</body>
+</html>
