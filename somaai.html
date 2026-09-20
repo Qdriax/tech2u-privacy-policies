@@ -131,11 +131,11 @@
     <p>Soma AI requests only the minimal permissions necessary to function:</p>
     <div class="card">
       <span class="perm-name">android.permission.CAMERA</span>
-      <p>Allows you to photograph physical notes, whiteboard diagrams, and textbook pages for instant conversion into study decks. Camera frames are processed strictly in real time.</p>
+      <p>Allows you to photograph physical notes, whiteboard diagrams, and textbook pages for instant conversion into study decks. Camera frames are processed strictly in real time on your device.</p>
     </div>
     <div class="card">
-      <span class="perm-name">android.permission.READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</span>
-      <p>Allows you to select and import previously captured images or screenshots of study materials from your photo gallery.</p>
+      <span class="perm-name">Android System Photo Picker (Zero Storage Permissions)</span>
+      <p>When importing study notes from your gallery, Soma AI uses the official Android system Photo Picker. The app never requests or accesses broad storage permissions (such as READ_MEDIA_IMAGES or READ_EXTERNAL_STORAGE), and receives temporary read-only access exclusively to the specific image you pick.</p>
     </div>
     <div class="card">
       <span class="perm-name">android.permission.INTERNET & ACCESS_NETWORK_STATE</span>
