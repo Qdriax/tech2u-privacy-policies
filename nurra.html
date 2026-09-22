@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Nurra: Baby & Pregnancy Tracker</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0B1313;
+      --card-bg: #132020;
+      --card-border: #1F3636;
+      --primary: #10B981;
+      --primary-light: #34D399;
+      --secondary: #F59E0B;
+      --accent: #065F46;
+      --text-main: #F1F5F9;
+      --text-muted: #94A3B8;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #09201C 0%, #0B1313 100%);
+      border-bottom: 1px solid var(--card-border);
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    header .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+    header .badge {
+      display: inline-block;
+      margin-top: 14px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid var(--primary);
+      border-radius: 20px;
+      padding: 5px 16px;
+      font-size: 0.85rem;
+      color: var(--primary-light);
+      font-weight: 600;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 44px 24px 80px;
+    }
+    .toc {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 44px;
+    }
+    .toc h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary-light);
+      margin-bottom: 14px;
+    }
+    .toc ol {
+      padding-left: 20px;
+    }
+    .toc li {
+      margin: 8px 0;
+    }
+    .toc a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .toc a:hover {
+      color: var(--primary-light);
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 44px;
+      scroll-margin-top: 24px;
+    }
+    section h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    section h2 .num {
+      background: var(--primary);
+      color: #06281E;
+      font-size: 0.8rem;
+      font-weight: 800;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    p {
+      color: var(--text-main);
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+    }
+    ul, ol {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    li {
+      color: var(--text-main);
+      font-size: 0.95rem;
+      margin: 8px 0;
+    }
+    .highlight-box {
+      background: rgba(16, 185, 129, 0.08);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .highlight-box p {
+      margin: 0;
+      color: #A7F3D0;
+    }
+    .disclaimer-box {
+      background: rgba(245, 158, 11, 0.08);
+      border-left: 4px solid var(--secondary);
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .disclaimer-box p {
+      margin: 0;
+      color: #FDE68A;
+      font-size: 0.93rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 0.92rem;
+    }
+    th, td {
+      border: 1px solid var(--card-border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--primary-light);
+      font-weight: 600;
+    }
+    td {
+      color: var(--text-muted);
+    }
+    td strong {
+      color: var(--text-main);
+    }
+    a {
+      color: var(--primary-light);
+      text-decoration: underline;
+    }
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 32px 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Nurra: Baby &amp; Pregnancy Tracker (Package: <code>com.tech2u.nurra</code>)</p>
+    <span class="badge">Last Updated: September 22, 2026 &bull; Effective Immediately</span>
+  </header>
+
+  <main>
+    <div class="toc">
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#overview">Overview &amp; Core Privacy Commitment</a></li>
+        <li><a href="#disclaimer">Pediatric &amp; Medical Informational Disclaimer</a></li>
+        <li><a href="#data-storage">Local Storage Architecture &amp; Data Types Processed</a></li>
+        <li><a href="#ads">Monetization, Google AdMob &amp; UMP Consent Framework</a></li>
+        <li><a href="#children">Children's Privacy &amp; Family Policies (COPPA)</a></li>
+        <li><a href="#rights">GDPR, UK GDPR, Swiss DPA &amp; CCPA/CPRA Rights</a></li>
+        <li><a href="#retention">Data Retention, Backup &amp; Deletion</a></li>
+        <li><a href="#changes">Changes to This Privacy Policy</a></li>
+        <li><a href="#contact">Contact Information</a></li>
+      </ol>
+    </div>
+
+    <section id="overview">
+      <h2><span class="num">1</span> Overview &amp; Core Privacy Commitment</h2>
+      <p>
+        <strong>Tech2U</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) builds and operates <strong>Nurra: Baby &amp; Pregnancy Tracker</strong> (&ldquo;the Application&rdquo;). We believe your family&rsquo;s most sensitive moments &mdash; feedings, sleep patterns, diaper logs, developmental milestones, and pediatric records &mdash; belong exclusively to you.
+      </p>
+      <div class="highlight-box">
+        <p><strong>Zero-Cloud Guarantee:</strong> All personal baby logs, developmental records, and growth data created in Nurra remain strictly on your local device in a secured offline SQLite database. We do not operate a remote server that collects, aggregates, sells, or monetizes your family&rsquo;s health or developmental data.</p>
+      </div>
+    </section>
+
+    <section id="disclaimer">
+      <h2><span class="num">2</span> Pediatric &amp; Medical Informational Disclaimer</h2>
+      <div class="disclaimer-box">
+        <p>
+          <strong>Medical Notice:</strong> Nurra is designed solely for informational, developmental tracking, and family logging purposes. The Application is NOT a medical device, clinical diagnostic tool, or medical monitor. It is not intended to diagnose, treat, cure, or prevent any illness, disease, or medical condition in infants, children, or mothers. Always consult a qualified pediatrician, doctor, or healthcare professional for diagnosis, medical treatment, or emergency guidance.
+        </p>
+      </div>
+    </section>
+
+    <section id="data-storage">
+      <h2><span class="num">3</span> Local Storage Architecture &amp; Data Types Processed</h2>
+      <p>The Application collects and stores the following information locally on your device to deliver tracking and developmental insights:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Data Points</th>
+            <th>Storage Location &amp; Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Child &amp; Pregnancy Profile</strong></td>
+            <td>Child name, birth date or expected due date, gender.</td>
+            <td>Stored locally in SQLite. Used to calculate age and developmental milestones.</td>
+          </tr>
+          <tr>
+            <td><strong>Daily Care Logs</strong></td>
+            <td>Feeding (breastfeeding timers, bottle amounts, solids), sleep intervals, diaper changes.</td>
+            <td>Stored locally in SQLite. Generates the 24-hour Care Orbit and daily summaries.</td>
+          </tr>
+          <tr>
+            <td><strong>WHO Growth Records</strong></td>
+            <td>Weight, height/length, head circumference.</td>
+            <td>Stored locally in SQLite. Plotted against standard World Health Organization (WHO) growth curves.</td>
+          </tr>
+          <tr>
+            <td><strong>Immunization Schedules</strong></td>
+            <td>Vaccination dates, administered status, schedule selections (CDC, KEPI, NPI, UIP, NHS, WHO).</td>
+            <td>Stored locally in SQLite. Generates countdown reminders for upcoming pediatric vaccines.</td>
+          </tr>
+          <tr>
+            <td><strong>App Preferences</strong></td>
+            <td>Theme preference (Light, Dark, System), metric vs imperial units.</td>
+            <td>Stored locally in SharedPreferences.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        None of these records are ever transmitted to Tech2U servers or third-party data brokers.
+      </p>
+    </section>
+
+    <section id="ads">
+      <h2><span class="num">4</span> Monetization, Google AdMob &amp; UMP Consent Framework</h2>
+      <p>
+        Nurra is 100% free with no paid subscriptions or paywalls. Monetization is supported exclusively through advertising served via <strong>Google AdMob (Google Mobile Ads SDK)</strong>.
+      </p>
+      <p>
+        In compliance with the European General Data Protection Regulation (GDPR), UK GDPR, Swiss DPA, and California Consumer Privacy Act (CCPA/CPRA), we integrate the certified <strong>Google User Messaging Platform (UMP)</strong> SDK:
+      </p>
+      <ul>
+        <li><strong>Consent Requirement:</strong> In applicable jurisdictions, no ad requests are initiated until you have granted consent via the interactive UMP consent dialog.</li>
+        <li><strong>Non-Personalized Ads:</strong> If you decline personalized advertising, Google AdMob serves non-personalized ads based on context rather than behavioral profiling.</li>
+        <li><strong>On-Demand Consent Revocation:</strong> You can withdraw or adjust your consent choices at any time directly in the app via <strong>Settings &rarr; Ad Consent &amp; Privacy Settings</strong> or <strong>Privacy &amp; Security &rarr; Manage Consent Preferences</strong>.</li>
+      </ul>
+      <p>
+        Google Mobile Ads may collect technical identifiers, device information (such as Android Advertising ID), and crash/diagnostic logs. For more information on how Google handles advertising data, review <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google&rsquo;s Advertising Privacy Policy</a>.
+      </p>
+    </section>
+
+    <section id="children">
+      <h2><span class="num">5</span> Children's Privacy &amp; Family Policies (COPPA)</h2>
+      <p>
+        Nurra is an application designed exclusively for <strong>parents, legal guardians, and adult caregivers</strong> to log and monitor their children&rsquo;s development. The Application is not directed toward or intended to be operated by children under the age of 13.
+      </p>
+      <p>
+        We do not knowingly collect personal information directly from children. If you believe that a child has provided personal information to us, please contact us at <code>developer.tech2u@gmail.com</code> so we can assist in removing it immediately.
+      </p>
+    </section>
+
+    <section id="rights">
+      <h2><span class="num">6</span> GDPR, UK GDPR, Swiss DPA &amp; CCPA/CPRA Rights</h2>
+      <p>Depending on your location, you have statutory rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Right of Access &amp; Portability:</strong> You can view all your logs directly in the app and export summaries via the Data &amp; Reports export feature.</li>
+        <li><strong>Right to Rectification:</strong> You can edit or correct any care log, child profile detail, or measurement directly in the app.</li>
+        <li><strong>Right to Erasure (&ldquo;Right to be Forgotten&rdquo;):</strong> You can delete any individual log entry, reset child profile data, or uninstall the app to permanently purge all data from your device.</li>
+        <li><strong>Right to Withdraw Consent:</strong> You can modify or withdraw your advertising consent choices at any time via the in-app consent preferences menu.</li>
+        <li><strong>&ldquo;Do Not Sell or Share My Personal Information&rdquo; (CCPA/CPRA):</strong> We do not sell or share personal information for monetary value. Advertising preferences can be set to opt-out of cross-context behavioral advertising through the UMP consent interface.</li>
+      </ul>
+    </section>
+
+    <section id="retention">
+      <h2><span class="num">7</span> Data Retention, Backup &amp; Deletion</h2>
+      <p>
+        Because all application data is stored locally in your device&rsquo;s application sandbox:
+      </p>
+      <ul>
+        <li>Data remains on your device until you manually edit or delete it, or until you uninstall the Application.</li>
+        <li>Clearing application data via your Android device settings (<em>Settings &rarr; Apps &rarr; Nurra &rarr; Storage &rarr; Clear Data</em>) will permanently erase all local logs and database entries.</li>
+      </ul>
+    </section>
+
+    <section id="changes">
+      <h2><span class="num">8</span> Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect enhancements to our service, new regulatory standards, or changes in legal obligations. The revised version will be indicated by an updated &ldquo;Last Updated&rdquo; date at the top of this page. We encourage you to review this policy periodically.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="num">9</span> Contact Information</h2>
+      <p>If you have any questions, feedback, or privacy-related requests concerning this Privacy Policy or the Application, please contact us at:</p>
+      <div class="highlight-box">
+        <p>
+          <strong>Tech2U Savannah</strong><br />
+          Email: <a href="mailto:developer.tech2u@gmail.com">developer.tech2u@gmail.com</a><br />
+          Location: Nairobi, Kenya<br />
+          Website: <a href="https://tech2u.co.ke" target="_blank" rel="noopener">tech2u.co.ke</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tech2U Savannah. All rights reserved. Nurra: Baby &amp; Pregnancy Tracker.</p>
+  </footer>
+
+</body>
+</html>
