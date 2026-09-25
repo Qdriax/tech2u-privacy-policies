@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Tic Tac Toe Arena</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #061220; color: #e2e8f0; line-height: 1.7; min-height: 100vh; }
+    header { background: linear-gradient(135deg, #091a2e 0%, #061220 100%); border-bottom: 1px solid #142842; padding: 42px 24px 34px; text-align: center; }
+    header h1 { font-size: clamp(1.4rem, 4vw, 2.1rem); font-weight: 800; color: #00e5ff; margin-bottom: 6px; letter-spacing: -0.02em; }
+    header .subtitle { font-size: 0.95rem; color: #94a3b8; }
+    header .effective-date { display: inline-block; margin-top: 12px; background: rgba(0, 229, 255, 0.1); border: 1px solid rgba(0, 229, 255, 0.3); border-radius: 20px; padding: 4px 16px; font-size: 0.8rem; color: #00e5ff; font-weight: 600; }
+    main { max-width: 800px; margin: 0 auto; padding: 48px 24px 80px; }
+    .toc { background: #0a1728; border: 1px solid #182e4a; border-radius: 12px; padding: 22px 26px; margin-bottom: 48px; }
+    .toc h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.09em; color: #94a3b8; margin-bottom: 12px; }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin: 6px 0; }
+    .toc a { color: #00e5ff; text-decoration: none; font-size: 0.92rem; font-weight: 500; }
+    .toc a:hover { text-decoration: underline; color: #7cf1ff; }
+    section { margin-bottom: 46px; scroll-margin-top: 24px; }
+    section h2 { font-size: 1.2rem; font-weight: 700; color: #f8fafc; padding-bottom: 8px; border-bottom: 1px solid #1a2f4c; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    section h2 .section-num { background: #13243a; color: #00e5ff; font-size: 0.8rem; font-weight: 800; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid #00e5ff; }
+    section h3 { font-size: 1.0rem; font-weight: 600; color: #cbd5e1; margin: 18px 0 8px; }
+    p { color: #cbd5e1; font-size: 0.95rem; margin-bottom: 12px; }
+    ul, ol { padding-left: 22px; margin-bottom: 12px; }
+    li { color: #cbd5e1; font-size: 0.95rem; margin: 6px 0; }
+    .highlight-box { background: rgba(0, 229, 255, 0.08); border-left: 4px solid #00e5ff; border-radius: 0 10px 10px 0; padding: 16px 20px; margin: 18px 0; }
+    .highlight-box p { margin: 0; color: #e0faff; font-size: 0.92rem; }
+    .permission-card { background: #0a1728; border: 1px solid #182e4a; border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+    .permission-card .perm-name { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.85rem; color: #00e5ff; display: block; margin-bottom: 4px; font-weight: 600; }
+    .permission-card p { margin: 0; font-size: 0.9rem; color: #94a3b8; }
+    .third-party-card { background: #0a1728; border: 1px solid #182e4a; border-radius: 10px; padding: 20px; margin: 16px 0; }
+    .third-party-card h3 { margin-top: 0; color: #f8fafc; font-size: 1.05rem; }
+    .third-party-card ul { margin-bottom: 12px; }
+    .third-party-card .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+    .third-party-card .links a { color: #00e5ff; font-size: 0.88rem; text-decoration: none; border: 1px solid #182e4a; border-radius: 6px; padding: 5px 12px; background: #0d1e33; }
+    .contact-box { background: linear-gradient(135deg, #0d1e33, #061220); border: 1px solid #00e5ff; border-radius: 12px; padding: 28px; text-align: center; margin-top: 36px; }
+    .contact-box p { margin-bottom: 10px; }
+    .contact-box a { color: #00e5ff; font-weight: 700; text-decoration: none; font-size: 1.05rem; }
+    .contact-box a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 32px 24px; border-top: 1px solid #1a2f4c; font-size: 0.85rem; color: #64748b; }
+    @media (max-width: 600px) { header { padding: 32px 18px 26px; } main { padding: 32px 16px 60px; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Tic Tac Toe Arena</h1>
+  <p class="subtitle">Multi-Grid Tactical Duel Game (3x3, 4x4, 5x5) — Privacy Policy</p>
+  <span class="effective-date">Effective Date: September 25, 2026</span>
+</header>
+<main>
+  <div class="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#s1">Introduction & Privacy Commitment</a></li>
+      <li><a href="#s2">Information We Collect & Process</a></li>
+      <li><a href="#s3">Local Storage & Cloud Matchmaking Architecture</a></li>
+      <li><a href="#s4">Device Permissions & Technical Justifications</a></li>
+      <li><a href="#s5">Monetization & Google Mobile Ads (AdMob)</a></li>
+      <li><a href="#s6">Google User Messaging Platform (UMP) & Consent Revocation</a></li>
+      <li><a href="#s7">Children's Privacy (COPPA & GDPR-K Compliance)</a></li>
+      <li><a href="#s8">Global Privacy Rights (GDPR, UK GDPR, CCPA/CPRA)</a></li>
+      <li><a href="#s9">Data Retention & Account Deletion Protocol</a></li>
+      <li><a href="#s10">Developer Contact Information</a></li>
+    </ol>
+  </div>
+
+  <section id="s1">
+    <h2><span class="section-num">1</span>Introduction & Privacy Commitment</h2>
+    <p><strong>Tic Tac Toe Arena</strong> (Package ID: <code>com.tech2u.tictactoearena</code>), developed by <strong>Tech2U Game Studio</strong> ("we", "our", or "us"), is an engaging multi-grid tactical board game designed for Android and global mobile platforms. We prioritize user privacy and uphold strict compliance with international data privacy regulations, including the European Union General Data Protection Regulation (EU GDPR), United Kingdom GDPR (UK GDPR), Swiss Data Protection Act (DPA), and the California Consumer Privacy Act as amended by the California Privacy Rights Act (CCPA/CPRA).</p>
+    <div class="highlight-box">
+      <p><strong>Fundamental Privacy Standard:</strong> Tic Tac Toe Arena is playable offline without mandatory account registration. We do not sell personal information, and any online services (matchmaking, leaderboards) operate with pseudonymous identifiers.</p>
+    </div>
+  </section>
+
+  <section id="s2">
+    <h2><span class="section-num">2</span>Information We Collect & Process</h2>
+    <p>We believe in data minimization. The app only processes the data strictly required to maintain gameplay state and provide requested features:</p>
+    <ul>
+      <li><strong>Local Gameplay Data:</strong> Board win/loss records, coin balances, sound toggles, and unlocked cosmetic skins are stored locally on your device.</li>
+      <li><strong>Pseudonymous Account Data (Optional):</strong> If you play online or sign in via Guest or Google Sign-In, a pseudonymous user identifier (UUID / Firebase Auth ID) and chosen display nickname are created to manage match states and global leaderboard scores.</li>
+      <li><strong>Diagnostic & Device Telemetry (Third-Party):</strong> Our monetization partner, Google AdMob, and analytics providers may collect non-identifiable technical data such as device model, OS version, approximate coarse location (country or region level), and diagnostic crash statistics to deliver stable ad serving.</li>
+    </ul>
+    <p><strong>Information We Never Collect:</strong> We never collect real-world legal names, physical street addresses, phone numbers, contact address books, microphone audio, camera streams, biometric data, or financial payment details.</p>
+  </section>
+
+  <section id="s3">
+    <h2><span class="section-num">3</span>Local Storage & Cloud Matchmaking Architecture</h2>
+    <p>The app uses a hybrid offline/cloud architecture:</p>
+    <ul>
+      <li><strong>Offline Modes:</strong> Solo play against The Clever Fox Dora AI and 2-player Pass & Play operate 100% offline. No telemetry or gameplay moves are transmitted across the network during offline games.</li>
+      <li><strong>Online Multiplayer & Leaderboard:</strong> Live random matchmaking and leaderboard rankings communicate securely over HTTPS with Google Firebase Realtime Database. Only match move coordinates and game scores are synced.</li>
+    </ul>
+  </section>
+
+  <section id="s4">
+    <h2><span class="section-num">4</span>Device Permissions & Technical Justifications</h2>
+    <p>Tic Tac Toe Arena requests only the minimal technical permissions declared in the Android Manifest:</p>
+
+    <div class="permission-card">
+      <span class="perm-name">android.permission.INTERNET</span>
+      <p>Required for online multiplayer matchmaking, global leaderboard rankings, and loading privacy-compliant AdMob advertisements.</p>
+    </div>
+
+    <div class="permission-card">
+      <span class="perm-name">android.permission.ACCESS_NETWORK_STATE</span>
+      <p>Used to verify internet connectivity before initiating online room matching or ad requests, conserving mobile battery and device data.</p>
+    </div>
+
+    <div class="permission-card">
+      <span class="perm-name">android.permission.POST_NOTIFICATIONS (Android 13+)</span>
+      <p>Used strictly to deliver the optional daily 08:30 AM morning tactical challenge reminder. You can enable or disable this anytime via device settings.</p>
+    </div>
+
+    <div class="permission-card">
+      <span class="perm-name">android.permission.RECEIVE_BOOT_COMPLETED</span>
+      <p>Allows the Android system to restore the scheduled daily 08:30 AM alarm after device reboots without launching background battery-draining services.</p>
+    </div>
+
+    <div class="permission-card">
+      <span class="perm-name">android.permission.VIBRATE</span>
+      <p>Powers optional tactile haptic feedback during piece placements and game completion triggers (can be toggled in Settings).</p>
+    </div>
+  </section>
+
+  <section id="s5">
+    <h2><span class="section-num">5</span>Monetization & Google Mobile Ads (AdMob)</h2>
+    <p>Tic Tac Toe Arena is 100% free to play with <strong>no paywalls and no Pro mode lockouts</strong>. All grid sizes (3x3, 4x4, 5x5) and game modes are accessible for all users. The application is supported exclusively through advertisements provided by Google AdMob:</p>
+    <div class="third-party-card">
+      <h3>Google AdMob (Google LLC)</h3>
+      <p>Google AdMob may process device identifiers, advertising IDs, coarse location, and app performance data in accordance with Google's Advertising Policies and user consent preferences.</p>
+      <ul>
+        <li><strong>Banner Ads:</strong> Displayed on navigation footers.</li>
+        <li><strong>Interstitial Ads:</strong> Displayed during natural game transitions (match completion, dialog exits).</li>
+        <li><strong>Rewarded Interstitial Ads:</strong> Optional ads that grant in-game arena coins upon user request.</li>
+      </ul>
+      <div class="links">
+        <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads Privacy Policy</a>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="s6">
+    <h2><span class="section-num">6</span>Google User Messaging Platform (UMP) & Consent Revocation</h2>
+    <p>In accordance with European and international privacy mandates, Tic Tac Toe Arena integrates the Google User Messaging Platform (UMP) SDK:</p>
+    <ul>
+      <li>Users in the European Economic Area (EEA), United Kingdom, and Switzerland are presented with a certified IAB TCF consent dialog upon initial startup.</li>
+      <li>Ads are only initialized and loaded after user consent has been queried and resolved.</li>
+      <li><strong>On-Demand Consent Revocation:</strong> You can review, modify, or revoke your consent preferences at any time directly inside the app by navigating to <em>Settings &gt; Privacy Policy</em> or via your device's Google Ads privacy preferences.</li>
+    </ul>
+  </section>
+
+  <section id="s7">
+    <h2><span class="section-num">7</span>Children's Privacy (COPPA & GDPR-K Compliance)</h2>
+    <p>Tic Tac Toe Arena is designed for general audiences and family-friendly tactical entertainment. We comply strictly with the Children's Online Privacy Protection Act (COPPA) and GDPR-K regulations. We do not knowingly collect personal information from children under 13 (or under 16 in applicable EU jurisdictions). If we become aware that personal information has been inadvertently collected from a child, we immediately delete such records.</p>
+  </section>
+
+  <section id="s8">
+    <h2><span class="section-num">8</span>Global Privacy Rights (GDPR, UK GDPR, CCPA/CPRA)</h2>
+    <p>Regardless of your geographic location, you enjoy comprehensive privacy rights over your data:</p>
+    <ul>
+      <li><strong>Right to Know & Access:</strong> You can request a summary of data associated with your pseudonymous ID.</li>
+      <li><strong>Right to Rectification:</strong> You can update your display name anytime via Profile settings.</li>
+      <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You can permanently purge your account and records using the in-app deletion button.</li>
+      <li><strong>Right to Opt-Out of Sale/Sharing:</strong> We do not sell or share personal information for monetary or other consideration under CCPA/CPRA.</li>
+      <li><strong>Right to Non-Discrimination:</strong> Exercising your privacy rights will never result in service degradation, pricing differences, or gameplay penalties.</li>
+    </ul>
+  </section>
+
+  <section id="s9">
+    <h2><span class="section-num">9</span>Data Retention & Account Deletion Protocol</h2>
+    <p>We retain gameplay and matchmaking records only for as long as necessary to provide arena services:</p>
+    <ul>
+      <li><strong>Self-Service Account Deletion:</strong> The app includes a permanent, built-in <strong>"Delete Account"</strong> option located in <em>Settings &gt; Delete Account</em>. Tapping this purges your cloud profile, match records, and user credentials from Firebase in real time.</li>
+      <li><strong>Local Data Reset:</strong> Clearing app storage or uninstalling the app permanently purges all locally stored coins, settings, and scores from your device.</li>
+      <li><strong>Manual Erasure Request:</strong> You can also email us directly at <a href="mailto:developer.tech2u@gmail.com" style="color: #00e5ff;">developer.tech2u@gmail.com</a> with your pseudonymous player ID for complete cloud data erasure within 30 days.</li>
+    </ul>
+  </section>
+
+  <section id="s10">
+    <h2><span class="section-num">10</span>Developer Contact Information</h2>
+    <p>For questions, privacy inquiries, or data requests regarding Tic Tac Toe Arena, please contact our privacy compliance team:</p>
+    <div class="contact-box">
+      <p><strong>Tech2U Game Studio / Tech2U Savannah</strong></p>
+      <p>Data Protection & Privacy Office</p>
+      <p><a href="mailto:developer.tech2u@gmail.com">developer.tech2u@gmail.com</a></p>
+      <p style="margin-top: 10px; font-size: 0.85rem; color: #94a3b8;">Nairobi, Kenya • Global App Distribution</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2026 Tech2U Game Studio. All rights reserved. Tic Tac Toe Arena is an original tactical board game title.</p>
+</footer>
+</body>
+</html>
