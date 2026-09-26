@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - PipClock: Forex Market Hours</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #060B17;
+      --card-bg: #0D1628;
+      --card-border: #1E2D4A;
+      --primary: #00E676;
+      --primary-light: #69F0AE;
+      --secondary: #00E5FF;
+      --accent: #2979FF;
+      --text-main: #F1F5F9;
+      --text-muted: #94A3B8;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #0A1931 0%, #060B17 100%);
+      border-bottom: 1px solid var(--card-border);
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    header .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+    header .badge {
+      display: inline-block;
+      margin-top: 14px;
+      background: rgba(0, 230, 118, 0.15);
+      border: 1px solid var(--primary);
+      border-radius: 20px;
+      padding: 5px 16px;
+      font-size: 0.85rem;
+      color: var(--primary-light);
+      font-weight: 600;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 44px 24px 80px;
+    }
+    .toc {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 40px;
+    }
+    .toc h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--primary-light);
+    }
+    .toc ol {
+      padding-left: 20px;
+    }
+    .toc li {
+      margin-bottom: 6px;
+    }
+    .toc a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .toc a:hover {
+      color: var(--primary-light);
+    }
+    section {
+      margin-bottom: 44px;
+    }
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-num {
+      background: rgba(0, 230, 118, 0.15);
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    p {
+      color: #CBD5E1;
+      margin-bottom: 14px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 24px;
+      margin-bottom: 14px;
+      color: #CBD5E1;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background: rgba(0, 229, 255, 0.08);
+      border-left: 4px solid var(--secondary);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 18px 0;
+    }
+    .highlight-box p {
+      margin: 0;
+      color: var(--text-main);
+    }
+    .warning-box {
+      background: rgba(245, 158, 11, 0.1);
+      border-left: 4px solid #F59E0B;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 18px 0;
+    }
+    .warning-box p {
+      margin: 0;
+      color: #FDE68A;
+      font-size: 0.95rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 14px;
+    }
+    .card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--primary-light);
+      margin-bottom: 8px;
+    }
+    .perm-name {
+      font-family: monospace;
+      background: rgba(255,255,255,0.08);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      color: var(--primary-light);
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 32px 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: var(--primary-light);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">PipClock: Forex Market Hours & Session Clocks</p>
+  <span class="badge">Effective Date: September 26, 2026 • Version 1.1</span>
+</header>
+
+<main>
+  <div class="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#s1">Introduction & Core Architecture</a></li>
+      <li><a href="#s2">Information We Do Not Collect</a></li>
+      <li><a href="#s3">Local Data Storage & Preferences</a></li>
+      <li><a href="#s4">Device Permissions & Technical Justifications</a></li>
+      <li><a href="#s5">Advertising & Google UMP Consent Framework</a></li>
+      <li><a href="#s6">Broker Directory & Affiliate Disclosure</a></li>
+      <li><a href="#s7">Regulatory Compliance & Financial Risk Disclaimer (Section 20.2)</a></li>
+      <li><a href="#s8">Children's Online Privacy (COPPA & GDPR-K)</a></li>
+      <li><a href="#s9">Global Privacy Rights (GDPR, UK GDPR, Swiss DPA, CCPA/CPRA)</a></li>
+      <li><a href="#s10">Consent Revocation & Contact Information</a></li>
+    </ol>
+  </div>
+
+  <section id="s1">
+    <h2><span class="section-num">1</span>Introduction & Core Architecture</h2>
+    <p>Tech2U Savannah ("we," "our," or "us"), a software division of QDRIAX NOURIX, develops and operates <strong>PipClock: Forex Market Hours</strong> (Application ID: <code>com.tech2u.pipclock</code>). We hold personal privacy as a fundamental human right. PipClock is engineered as an <strong>offline-first market timing and reference utility</strong> that runs complex session reconciliation and daylight saving calculations locally on your mobile device.</p>
+    <div class="highlight-box">
+      <p><strong>Core Privacy Invariant:</strong> PipClock does not require account registration, requests no passwords, collects zero banking or trading credentials, and maintains zero private telemetry servers.</p>
+    </div>
+  </section>
+
+  <section id="s2">
+    <h2><span class="section-num">2</span>Information We Do Not Collect</h2>
+    <p>We believe in strict data minimization. Under no circumstances do we collect, harvest, store, or sell:</p>
+    <ul>
+      <li><strong>Personally Identifiable Information (PII):</strong> No names, email addresses, phone numbers, or government IDs.</li>
+      <li><strong>Broker or Trading Credentials:</strong> No MT4/MT5 passwords, investor passwords, trading balances, or API tokens.</li>
+      <li><strong>Precise Physical Location:</strong> Zero GPS, cellular triangulation, or nearby Wi-Fi network scanning. Time zones are inferred purely from your phone's standard OS clock offset.</li>
+      <li><strong>Media & Device Content:</strong> Zero access to your photos, camera, microphone, contacts, or storage files.</li>
+    </ul>
+  </section>
+
+  <section id="s3">
+    <h2><span class="section-num">3</span>Local Data Storage & Preferences</h2>
+    <p>All user customization is saved exclusively on your device within the secure sandboxed <code>SharedPreferences</code> storage:</p>
+    <ul>
+      <li>Selected retail broker profile (e.g. HFM, IC Markets, Exness, XM, FP Markets, Pepperstone).</li>
+      <li>Active clock context preference (Local phone time, Broker server time, or New York anchor time).</li>
+      <li>12-hour or 24-hour time display format preference.</li>
+      <li>Visual theme preference (Dark Mode, Light Mode, or automatic System Default).</li>
+      <li>Custom user-added economic events and alert lead-time intervals.</li>
+      <li>Notification scheduling toggles (Daily 07:30 AM market briefing, session opens, and weekend warnings).</li>
+    </ul>
+  </section>
+
+  <section id="s4">
+    <h2><span class="section-num">4</span>Device Permissions & Technical Justifications</h2>
+    <p>PipClock requests only the minimum Android permissions strictly required for its intended utilities:</p>
+    
+    <div class="card">
+      <span class="perm-name">android.permission.INTERNET & ACCESS_NETWORK_STATE</span>
+      <h3>Network Access</h3>
+      <p>Required exclusively to initialize the Google User Messaging Platform (UMP) consent SDK and load Google AdMob advertisements.</p>
+    </div>
+
+    <div class="card">
+      <span class="perm-name">android.permission.POST_NOTIFICATIONS</span>
+      <h3>In-Tray Notifications (Android 13+)</h3>
+      <p>Allows the app to display scheduled alerts in your notification tray, including the daily 07:30 AM morning session briefing and user-configured economic release reminders.</p>
+    </div>
+
+    <div class="card">
+      <span class="perm-name">android.permission.SCHEDULE_EXACT_ALARM & USE_EXACT_ALARM</span>
+      <h3>Exact Session Timing</h3>
+      <p>Required to wake the notification engine at the exact second market sessions open (e.g. London 07:00 UTC, NY 12:00 UTC) or 15 minutes before high-impact economic news releases.</p>
+    </div>
+
+    <div class="card">
+      <span class="perm-name">android.permission.RECEIVE_BOOT_COMPLETED</span>
+      <h3>Reboot Restoration</h3>
+      <p>Ensures scheduled reminders (such as your daily 07:30 AM briefing) are accurately rescheduled when your phone restarts, without needing to open the app.</p>
+    </div>
+  </section>
+
+  <section id="s5">
+    <h2><span class="section-num">5</span>Advertising & Google UMP Consent Framework</h2>
+    <p>PipClock is a 100% free application funded entirely through digital advertisements served by <strong>Google AdMob</strong>. We comply with all global privacy regulations (GDPR, UK GDPR, Swiss DPA, and CCPA/CPRA):</p>
+    <ul>
+      <li><strong>Google User Messaging Platform (UMP):</strong> On first launch in regulated territories (EEA, UK, Switzerland, and California), users are presented with a certified consent form to select personalized or non-personalized ad options.</li>
+      <li><strong>AdMob SDK Integration:</strong> AdMob may collect pseudonymous identifiers (such as the Google Advertising ID), IP addresses, and app interaction data solely for ad delivery, fraud prevention, and frequency capping.</li>
+      <li><strong>On-Demand Consent Revocation:</strong> You can change or withdraw your consent at any time via <em>More → Settings → Privacy & Ad Consent Preferences</em>.</li>
+    </ul>
+  </section>
+
+  <section id="s6">
+    <h2><span class="section-num">6</span>Broker Directory & Affiliate Disclosure</h2>
+    <p>PipClock includes an educational directory of regulated forex and CFD brokers (such as HFM / HF Markets). Tapping external broker links opens your mobile browser to the broker's official website.</p>
+    <div class="highlight-box">
+      <p><strong>Affiliate Transparency:</strong> We may earn an affiliate commission when users open an account through external links provided in the app. This creates zero additional cost for you and supports ongoing free updates of PipClock.</p>
+    </div>
+  </section>
+
+  <section id="s7">
+    <h2><span class="section-num">7</span>Regulatory Compliance & Financial Risk Disclaimer (Section 20.2)</h2>
+    <div class="warning-box">
+      <p><strong>Mandatory Disclaimer:</strong> PipClock is an informational and market-timing utility. It does not provide financial, investment, or trading advice, and does not offer brokerage, deposit, execution, or withdrawal services. Session and server times are provided for reference only and must be verified against your broker's terminal. Trading foreign exchange and CFDs carries a high level of risk and may result in the loss of your capital. The majority of retail accounts lose money. Past performance does not indicate future results.</p>
+    </div>
+  </section>
+
+  <section id="s8">
+    <h2><span class="section-num">8</span>Children's Online Privacy (COPPA & GDPR-K)</h2>
+    <p>PipClock is intended for adult financial market participants (ages 18 and older). We do not knowingly collect or solicit information from children under 13 (or under 16 in the European Union). If you believe a child has provided us with personal information, please contact us immediately for deletion.</p>
+  </section>
+
+  <section id="s9">
+    <h2><span class="section-num">9</span>Global Privacy Rights (GDPR, UK GDPR, Swiss DPA, CCPA/CPRA)</h2>
+    <p>Depending on your jurisdiction, you possess specific statutory rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Right to Access & Rectify:</strong> You can review and modify your app settings and calendar events at any time inside the app.</li>
+      <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Uninstalling the application or clearing app data in Android settings instantly erases all locally stored preferences.</li>
+      <li><strong>Right to Opt-Out of Sale / Sharing:</strong> We do not sell user personal information. CCPA/CPRA opt-out choices can be toggled via the Privacy Preferences menu.</li>
+    </ul>
+  </section>
+
+  <section id="s10">
+    <h2><span class="section-num">10</span>Consent Revocation & Contact Information</h2>
+    <p>For questions, privacy inquiries, or data compliance concerns, please contact our data governance team:</p>
+    <div class="card">
+      <h3>Tech2U Savannah (QDRIAX NOURIX)</h3>
+      <p><strong>Data Governance:</strong> developer.tech2u@gmail.com</p>
+      <p><strong>Headquarters:</strong> Nairobi, Kenya</p>
+      <p><strong>Developer Catalog:</strong> <a href="https://play.google.com/store/apps/dev?id=5576543719747757488" target="_blank" rel="noopener">Google Play Store Developer Page</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Tech2U Savannah (QDRIAX NOURIX division). All rights reserved.</p>
+  <p style="margin-top: 6px;">PipClock: Forex Market Hours • Version 1.1</p>
+</footer>
+
+</body>
+</html>
