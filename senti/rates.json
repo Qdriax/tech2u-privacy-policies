@@ -116,8 +116,8 @@
       "id": "old-mutual-mmf",
       "name": "Old Mutual Money Market Fund",
       "provider": "Old Mutual Investment Group",
-      "dailyRate": 9.83,
-      "effectiveYield": 10.33,
+      "dailyRate": 9.81,
+      "effectiveYield": 10.31,
       "minimumInvestment": 5000.0,
       "managementFee": 2.0,
       "fundSize": "KES 52 Billion",
@@ -131,13 +131,13 @@
     {
       "id": "91-day",
       "name": "91-Day Treasury Bill",
-      "rate": 8.77,
+      "rate": 8.76,
       "termDays": 91
     },
     {
       "id": "182-day",
       "name": "182-Day Treasury Bill",
-      "rate": 8.89,
+      "rate": 8.87,
       "termDays": 182
     },
     {
