@@ -137,13 +137,13 @@
     {
       "id": "182-day",
       "name": "182-Day Treasury Bill",
-      "rate": 8.84,
+      "rate": 8.83,
       "termDays": 182
     },
     {
       "id": "364-day",
       "name": "364-Day Treasury Bill",
-      "rate": 9.01,
+      "rate": 8.99,
       "termDays": 364
     }
   ]
